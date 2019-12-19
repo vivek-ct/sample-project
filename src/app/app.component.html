@@ -1,3 +1,17 @@
 <ion-app>
+    <ion-menu side="end" menuId="first" contentId="my-content">
+        <ion-header>
+            <ion-toolbar color="light">
+                <ion-title>Auth<span>demo</span></ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list id="my-content">
+                <ion-item [routerLink]="['/home']">Home</ion-item>
+
+                <ion-item (click)="logout()"><ion-label>Logout</ion-label></ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
